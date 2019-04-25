@@ -19,6 +19,10 @@
             <Rectangle Name="BlueRectangle" Fill="Blue" Width="50" Height="50" RelativePanel.LeftOf="RedRectangle"/>
             <Rectangle Name="GreenRectangle" Fill="Green" Width="50" Height="50" 
                        RelativePanel.AlignVerticalCenterWith="RedRectangle" RelativePanel.AlignHorizontalCenterWithPanel="True"/>
+            <Rectangle Name="YellowRectangle" Fill="Yellow" MinWidth="50" MinHeight="50" RelativePanel.AlignBottomWithPanel="True"
+                       RelativePanel.AlignTopWith="PurpleRectangle"/>
+            <Rectangle Name="PurpleRectangle" Fill="Purple" MinWidth="50" MinHeight="50" RelativePanel.Below="RedRectangle"
+                       RelativePanel.AlignRightWith="RedRectangle" RelativePanel.AlignLeftWith="GreenRectangle"/>
         </RelativePanel>
     </Grid>
 </Page>
