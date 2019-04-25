@@ -9,6 +9,16 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <RelativePanel MinHeight="300" Grid.Row="1">
+            <Rectangle Name="RedRectangle" Fill="Red" Width="100" Height="100" RelativePanel.AlignRightWithPanel="True"/>
+            <Rectangle Name="BlueRectangle" Fill="Blue" Width="50" Height="50" RelativePanel.LeftOf="RedRectangle"/>
+            <Rectangle Name="GreenRectangle" Fill="Green" Width="50" Height="50" 
+                       RelativePanel.AlignVerticalCenterWith="RedRectangle" RelativePanel.AlignHorizontalCenterWithPanel="True"/>
+        </RelativePanel>
     </Grid>
 </Page>
